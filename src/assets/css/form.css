@@ -1,0 +1,476 @@
+/* ///////////// center build an app css /////// */
+
+
+.center-contact {
+	padding: 60px 0;
+	position: relative;
+	height: 100vh;
+	position: sticky;
+}
+.center-contact .center-fix-area {
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.center-contact .center-fix-area h3 {
+	color: #076a76;
+}
+.send-btn-one {
+	display: inline-block;
+	padding: 10px 30px;
+	color: #ffffff !important;
+	text-transform: capitalize;
+	background-color: #076a76;
+	border: 2px solid #076a76;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	border-radius: 3px;
+	font-size: 16px;
+	font-weight: 500;
+	margin: 15px 0 0;
+	transition: 0.3s all ease-in-out;
+}
+
+
+/* ////////// */
+
+.ripple {
+	position: relative;
+	overflow: hidden;
+}
+.ripple:before {
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.6);
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0;
+	height: 0;
+}
+.ripple:hover:before {
+	transition: all 0.5s ease-out;
+	opacity: 0;
+	width: 160px;
+	height: 160px;
+	margin-top: -80px;
+	margin-left: -80px;
+}
+
+.showcategory {
+	padding: 30px 0;
+}
+.showcategory h5 {
+	background: #d4faff;
+	color: #076a76;
+	text-align: center;
+	padding: 25px 0;
+    margin: 5px auto;
+    font-size: 36px;
+}
+.contact-text h3 {
+	font-size: 36px;
+	margin-bottom: 14px;
+	font-weight: bold;
+	color: #076a76;
+}
+
+/* ///// category multiple checkbox css section ///////// */
+
+
+.category-checkbox-sec {
+	display: block;
+}
+.category-checkbox-sec ul {
+	list-style: none;
+	padding: 0;
+}
+.category-checkbox-sec ul li {
+    display: inline-block;
+    text-align: left;
+    width: 367px;
+}
+.category-checkbox-sec ul li:last-child {
+	margin-right: 0;
+}
+.category-checkbox-sec ul li input[type=checkbox].css-checkbox {
+	display: none;
+}
+.category-checkbox-sec ul li .css-label {
+    display: block;
+    width: 100%;
+    padding: 10px 25px;
+    cursor: pointer;
+    margin: 0;
+    color: #076a76;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+}
+.category-checkbox-sec ul li .css-label i {
+	font-size: 16px !important;
+	margin: 3px 0px 0px;
+	margin-right: 10px;
+	color: #000;
+}
+
+.category-checkbox-sec ul li .css-label img{
+    margin-right: 25px;
+    margin-bottom: 5px;
+}
+
+.category-checkbox-sec ul li span {
+    display: block;
+    background: #d4faff;
+    transition: 0.3s all ease-in-out;
+}
+
+.category-checkbox-sec ul li span:hover {
+	background: #076a76;
+	color: #fff;
+}
+.category-checkbox-sec ul li span:hover i {
+	color: #fff;
+}
+.category-checkbox-sec ul li span:hover label {
+	color: #fff;
+}
+.category-checkbox-sec ul li input[type=checkbox].css-checkbox:checked + .css-label {
+	background: #076a76;
+	color: #fff;
+}
+.category-checkbox-sec ul li input[type=checkbox].css-checkbox:checked + span i {
+	color: #fff;
+}
+.category-checkbox-sec ul li input[type=checkbox].css-checkbox:checked +  span label {
+	color: #fff;
+}
+
+/* /////////// */
+
+.stylistformfill,
+.howbig {
+	text-align: center;
+}
+.stylistformfill ul,
+.howbig ul {
+	list-style-type: none;
+	margin: 60px 0 0;
+	padding: 0;
+}
+.stylistformfill li,
+.howbig li {
+	display: inline-block;
+	margin-right: 110px;
+}
+.stylistformfill li:last-child,
+.howbig li:last-child {
+	margin-right: 0px;
+}
+.stylistformfill input[type="checkbox"][id^="myCheckbox"],
+.howbig input[type="radio"][id^="howbig"],
+.level input[type="radio"][id^="level"],
+.user input[type="checkbox"][id^="user"],
+.generate input[type="checkbox"][id^="generate"],
+.dates input[type="checkbox"][id^="dates"],
+.engagement input[type="checkbox"][id^="engagement"],
+.billing input[type="checkbox"][id^="billing"],
+.admin input[type="checkbox"][id^="admin"],
+.external input[type="checkbox"][id^="external"],
+.security input[type="checkbox"][id^="security"] {
+	display: none;
+}
+.stylistformfill label {
+	display: block;
+	position: relative;
+	margin: 10px;
+	cursor: pointer;
+}
+.stylistformfill label:before,
+.howbig label:before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    transition-duration: 0.4s;
+    transform: scale(0);
+    font-size: 16px;
+}
+.stylistformfill label img {
+	width: 90px;
+	transition-duration: 0.2s;
+	transform-origin: 50% 50%;
+}
+.stylistformfill:checked+label,
+.howbig:checked+label {
+	border-color: #076a76;
+}
+.stylistformfill input[type="checkbox"]:checked+label:before,
+.howbig input[type="radio"]:checked+label:before {
+	content: "✓";
+	background-color: #076a76;
+	transform: scale(1);
+}
+.howbig input[type="checkbox"]:checked+label:before {
+	content: "✓";
+	background-color: #076a76;
+	transform: scale(1);
+}
+.stylistformfill input[type="checkbox"]:checked+label img {
+	transform: scale(0.9);
+	/* box-shadow: 0 0 5px #333; */
+	z-index: -1;
+}
+
+.stylistformfill li p {
+    font-weight: 600;
+    color: #000;
+    font-size: 22px;
+}
+
+/* ////// how big css ////// */
+
+.howbig {
+	text-align: center;
+	padding-bottom: 60px;
+}
+.howbig:checked+label h5 {
+	color: #076a76;
+}
+.howbig label h5 {
+	color: #076a76;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 110px;
+	font-size: 20px;
+}
+.howbig label:before {
+	top: -15px;
+	left: -15px;
+	border: 2px solid #ffffff;
+	width: 30px;
+	height: 30px;
+}
+.howbig label {
+	display: block;
+	position: relative;
+	cursor: pointer;
+}
+.howbig:checked+label:before {
+	content: "✓";
+	background-color: #076a76;
+	transform: scale(1);
+	padding: 0px;
+	font-size: 20px;
+}
+.howbig label img{
+    width: 90px;
+    transition-duration: 0.2s;
+	transform-origin: 50% 50%;
+}
+
+.howbig input[type="radio"]:checked+label img {
+	transform: scale(0.9);
+	/* box-shadow: 0 0 5px #333; */
+	z-index: -1;
+}
+
+.howbig input[type="checkbox"]:checked+label img {
+	transform: scale(0.9);
+	/* box-shadow: 0 0 5px #333; */
+	z-index: -1;
+}
+/* ////// level ///// */
+
+.level {
+	border-radius: 5px;
+	padding-top: 30px;
+}
+.mylevel label i {
+	font-size: 56px !important;
+	color: #076a76;
+	margin: 15px 0 0;
+	display: block;
+}
+/* /// user css /// */
+
+.user label i {
+	font-size: 56px !important;
+	color: #076a76;
+	margin: 30px 0 0;
+}
+.showarea ul li p {
+	font-weight: 600;
+	color: #000;
+	font-size: 22px;
+}
+.user ul li {
+	margin-right: 10px;
+	min-width: 230px;
+}
+.user ul li label {
+	margin: auto;
+}
+.user ul li p {
+	padding: 15px 0 0;
+}
+.selected_Table {
+	text-align: left;
+	padding-top: 30px;
+}
+.selected_Table table thead th {
+	background-color: #076a76;
+	border-color: #076a76;
+	color: #fff;
+	width: 160px;
+}
+
+
+/* //////////////////////////////////////////////////////////// */
+
+.appsize{
+    background-color: #d4faff;
+}
+
+.mylevel{
+    background-color: #d4faff;
+    margin: 10px 0;
+}
+
+.user{
+    background-color: #d4faff;
+    margin-bottom: 10px;
+}
+
+.generate {
+    background-color: #d4faff;
+    margin-bottom: 10px;
+}
+.dates {
+    background-color: #d4faff;
+    margin-bottom: 10px;
+}
+.billing {
+    background-color: #d4faff;
+    margin-bottom: 10px;
+}
+.engagement {
+    background-color: #d4faff;
+    margin-bottom: 10px;
+}
+.admin {
+    background-color: #d4faff;
+    margin-bottom: 10px;
+}
+.external {
+    background-color: #d4faff;
+    margin-bottom: 10px;
+}
+.security {
+    background-color: #d4faff;
+}
+
+/* /////// */
+
+.user-account ul li {
+    min-width: 275px;
+}
+
+.user-account ul li p {
+    line-height: 40px;
+}
+
+/* ///////// */
+
+.generate ul li {
+    min-width: 275px;
+}
+.generate ul li p {
+    line-height: 40px;
+}
+
+/* /////// */
+
+.dates ul li {
+    min-width: 275px;
+}
+
+/* //// */
+
+.engagement ul li {
+    min-width: 275px;
+}
+
+.engagement ul li p {
+    line-height: 40px;
+}
+
+/* //// */
+
+.billing ul {
+	text-align: left;
+    max-width: 865px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.billing ul li {
+	min-width: 275px;
+	text-align: center;
+}
+
+.billing ul p {
+	line-height: 40px;
+}
+
+/* ////// */
+
+
+.admin ul li {
+    min-width: 275px;
+}
+
+.admin ul li p {
+    line-height: 40px;
+}
+
+/* /////// */
+
+.external ul li {
+    min-width: 275px;
+}
+
+.external ul li p {
+    line-height: 40px;
+}
+
+
+/* /////// */
+
+.security ul li {
+    min-width: 275px;
+}
+
+.security ul li p {
+    line-height: 40px;
+}
+
+
+/* ///////// */
+ 
+.user-account label:before, .generate label:before,  .dates label:before, .engagement label:before, .billing label:before, .admin label:before, .external label:before, .security label:before {
+	top: -15px;
+    left: 80px;
+}
