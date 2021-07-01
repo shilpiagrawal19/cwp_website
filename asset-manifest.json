@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/cwp_website/static/css/main.02c6360a.chunk.css",
+    "main.js": "/cwp_website/static/js/main.48dd4f9e.chunk.js",
+    "main.js.map": "/cwp_website/static/js/main.48dd4f9e.chunk.js.map",
+    "runtime-main.js": "/cwp_website/static/js/runtime-main.9a8f6c5f.js",
+    "runtime-main.js.map": "/cwp_website/static/js/runtime-main.9a8f6c5f.js.map",
+    "static/css/2.9ecb9698.chunk.css": "/cwp_website/static/css/2.9ecb9698.chunk.css",
+    "static/js/2.179e7c07.chunk.js": "/cwp_website/static/js/2.179e7c07.chunk.js",
+    "static/js/2.179e7c07.chunk.js.map": "/cwp_website/static/js/2.179e7c07.chunk.js.map",
+    "index.html": "/cwp_website/index.html",
+    "static/css/2.9ecb9698.chunk.css.map": "/cwp_website/static/css/2.9ecb9698.chunk.css.map",
+    "static/css/main.02c6360a.chunk.css.map": "/cwp_website/static/css/main.02c6360a.chunk.css.map",
+    "static/js/2.179e7c07.chunk.js.LICENSE.txt": "/cwp_website/static/js/2.179e7c07.chunk.js.LICENSE.txt",
+    "static/media/flaticon.css": "/cwp_website/static/media/Flaticond41d.7f488bba.eot",
+    "static/media/a.b3c8c9fe.png": "/cwp_website/static/media/a.b3c8c9fe.png",
+    "static/media/about.b87052a1.png": "/cwp_website/static/media/about.b87052a1.png",
+    "static/media/android.84260414.png": "/cwp_website/static/media/android.84260414.png",
+    "static/media/apple.51748933.png": "/cwp_website/static/media/apple.51748933.png",
+    "static/media/b.a486ad8f.png": "/cwp_website/static/media/b.a486ad8f.png",
+    "static/media/c.4f287432.png": "/cwp_website/static/media/c.4f287432.png",
+    "static/media/custom.css": "/cwp_website/static/media/contactbanner.4bab38de.jpg",
+    "static/media/css3.9f33c557.png": "/cwp_website/static/media/css3.9f33c557.png",
+    "static/media/style2.css": "/cwp_website/static/media/mapdot1.6a70fbbe.png",
+    "static/media/html5.180e0f64.png": "/cwp_website/static/media/html5.180e0f64.png",
+    "static/media/js.83903b30.png": "/cwp_website/static/media/js.83903b30.png",
+    "static/media/logo.5a32cd44.png": "/cwp_website/static/media/logo.5a32cd44.png",
+    "static/media/main-image.c828dbaf.png": "/cwp_website/static/media/main-image.c828dbaf.png",
+    "static/media/php-icon.b4c8a888.png": "/cwp_website/static/media/php-icon.b4c8a888.png",
+    "static/media/style.css": "/cwp_website/static/media/shape-line1.c36c1721.png",
+    "static/media/shape.859bdad7.png": "/cwp_website/static/media/shape.859bdad7.png",
+    "static/media/web-development-process.79455f82.png": "/cwp_website/static/media/web-development-process.79455f82.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a8f6c5f.js",
+    "static/css/2.9ecb9698.chunk.css",
+    "static/js/2.179e7c07.chunk.js",
+    "static/css/main.02c6360a.chunk.css",
+    "static/js/main.48dd4f9e.chunk.js"
+  ]
+}
