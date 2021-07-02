@@ -30,6 +30,10 @@ import Testimonial from './Testimonial'
 import Partners from './Partners'
 import Footer from './Footer'
 import Fade from 'react-reveal/Fade';
+import Preloader from '../Preloader/Preloader'
+import whatsapp from '../../assets/image/whatsapp.png'
+import call from '../../assets/image/call.png'
+
 
 dom.watch()
 
@@ -38,7 +42,6 @@ library.add(fas);
 
 
 function Home() {
-
     $(window).on('scroll',function() {
         if ($(this).scrollTop() > 120){  
             $('.navbar-area').addClass("is-sticky");
@@ -82,6 +85,9 @@ function Home() {
     }
     return (
         <div>
+
+       <Preloader/>
+      
         <Navbar/>
         <div class="main-banner">
         <div class="d-table">
@@ -443,10 +449,10 @@ function Home() {
     <div class="fixedIcon">
     <ul style={{textAlign:"left"}}>
         <li>
-            <a href="https://www.cloudwapp.com/ContactUs"> <img src="https://www.cloudwapp.com/assets/front/image/call.png" alt="contact"/> </a>
+            <a href="https://www.cloudwapp.com/ContactUs"> <img src={call} alt="contact"/> </a>
         </li>
         <li>
-            <a href="https://wa.me/+917898117784" target="_blank"> <img src="https://www.cloudwapp.com/assets/front/image/whatsapp.png" alt="whatsapp"/> </a>
+            <a href="https://wa.me/+917898117784" target="_blank"> <img src={whatsapp} alt="whatsapp"/> </a>
         </li>
         <li>
             <a href="mailto:info@cloudwapp.com" target="_blank"> <FontAwesomeIcon icon={['fas', 'envelope']} /></a>
@@ -471,6 +477,9 @@ function Home() {
     </a>
     </div>
         </div>
+
+
+        
     )
 }
 

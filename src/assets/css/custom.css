@@ -1687,6 +1687,8 @@ label[for="file-upload"]{
     margin: 10px 0;
     background: transparent;
     transition: 0.2s all ease-in-out 0s;
+    align-items: center;
+
 }
 
 

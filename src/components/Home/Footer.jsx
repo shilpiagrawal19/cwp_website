@@ -8,6 +8,14 @@ import Usa from '../../assets/img/flags/usa.jpg'
 import Msgicon from '../../assets/img/flags/massege_icon.png'
 import skypeicon from '../../assets/img/flags/skya_icon.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import facebook from '../../assets/img/facebook.png'
+import twitter from '../../assets/img/twitter.png'
+import linkedin from '../../assets/img/linkedin.png'
+import instagram from '../../assets/img/instagram.png'
+
+
+// import 'font-awesome/css/font-awesome.css'
+
 import Fade from 'react-reveal/Fade';
 
 
@@ -165,10 +173,10 @@ function Footer() {
 
                 <div class="col-lg-12 col-md-12 col-sm-12 footersecondrow wow fadeInUp">
                 <div class="social-btns">
-                <a class="btn facebook" href="https://www.facebook.com/Cloudwapp" target="_blank"><i><FontAwesomeIcon icon={['fas', 'facebook-f']}/></i></a>
-                <a class="btn twitter" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                <a class="btn google" href="https://www.instagram.com/cloudwapp/" target="_blank"><i class="fa fa-instagram"></i></a>
-                <a class="btn linkedin" href="https://www.linkedin.com/company/cloudwapp/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a class="btn facebook" href="https://www.facebook.com/Cloudwapp" target="_blank"><img src={facebook}/></a>
+                <a class="btn twitter" href="#" target="_blank"><img src={twitter}/></a>
+                <a class="btn google" href="https://www.instagram.com/cloudwapp/" target="_blank"><img src={instagram}/></a>
+                <a class="btn linkedin" href="https://www.linkedin.com/company/cloudwapp/" target="_blank"><img src={linkedin}/></a>
                 </div>
                 </div>
 

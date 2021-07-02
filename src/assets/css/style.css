@@ -8159,27 +8159,27 @@ Copyright Section CSS
         }
         
         .btn2Color {
-            background: #828282 !important;
+            background: #fd0a7aad !important;
             color: #fff !important;
         }
         
         .btn3Color {
-            background: #ca71ca !important;
+            background: #024b7e !important;
             color: #fff !important;
         }
         
         .btn4Color {
-            background: #9f59d4 !important;
+            background: #09c !important;
             color: #fff !important;
         }
         
         .btn5Color {
-            background: #41e041 !important;
+            background: #010101  !important;
             color: #fff !important;
         }
         
         .btn6Color {
-            background: skyblue !important;
+            background: #f88588 !important;
             color: #fff !important;
         }
         
@@ -8270,4 +8270,48 @@ Copyright Section CSS
 }
 .content-p{
   color: #000 !important;
+}
+.modal-section{
+  border-radius: 10px !important;
+}
+.modal-section .welcome-popup{
+  background-image: linear-gradient(#a2f0d4,#6ac0a0);
+}
+
+@media (min-width: 576px)
+{
+  .modal-section .modal-dialog {
+  max-width: 750px;
+  margin: 1.75rem auto;
+}}
+
+.modal-section .popup-img{
+  max-width: 112%;
+    height: 320px;
+}
+
+.modal-section .popup_btn{
+  background-color: #d36342;
+  border-radius: 10px;
+  border-color: #d36342;
+}
+/* .popup_btn:hover{
+  background-color: #d36342 !important;
+  border-color: #d36342 !important;
+
+} */
+
+.modal-section .close-popup{
+  border: none;
+  background-color:transparent ;
+  float: right;
+  position: relative;
+  z-index: 1;
+}
+
+.modal-section .owl-carousel .owl-item img {
+  max-width: 100%;
+}
+.modal-section .modal-content {
+  border-radius: 2rem !important;
 }

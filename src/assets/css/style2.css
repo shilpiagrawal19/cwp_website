@@ -599,7 +599,7 @@ to{-webkit-transform:rotate(360deg);transform:rotate(360deg);}
 
 .boosting-list-tab .tabs li{-ms-flex:0 0 16.6666666667%;-webkit-box-flex:0;flex:0 0 16.6666666667%;max-width:15.6666666667%;text-align:center;margin-right:5px;margin-left:5px;}
 
-.boosting-list-tab .tabs li a{display:block;border-radius:2px;color:#292a2c;-webkit-box-shadow:0px 10px 40px 0px rgba(107, 125, 179, 0.11);box-shadow:0px 10px 40px 0px rgba(107, 125, 179, 0.11);padding-right:0;padding-top:0;padding-bottom:0;padding-left:0;font-size:15px;font-weight:700;height:110px;}
+.boosting-list-tab .tabs li a{display:block;border-radius:2px;color:#292a2c;-webkit-box-shadow:0px 10px 40px 0px rgba(107, 125, 179, 0.11);box-shadow:0px 10px 40px 0px rgba(107, 125, 179, 0.11);padding-right:0;padding-top:20;padding-bottom:0;padding-left:0;font-size:15px;font-weight:700;height:110px;}
 
 .boosting-list-tab .tabs li a i{color:#076a76;-webkit-transition:0.5s;transition:0.5s;font-weight:normal;font-size:40px;line-height:normal;}
 
@@ -2520,7 +2520,7 @@ label[for="file-upload"]{padding:0.5em;display:inline-block;background:#076a76;c
     -webkit-transform: scale(0.8);
     transform: scale(0.8);
   }
-  .footer-section .social-btns .btn.facebook:before {background: #3b5998;}
+  /* .footer-section .social-btns .btn.facebook:before {background: #3b5998;}
   .footer-section .social-btns .btn.facebook .fa {color: #3b5998;}
   
   .footer-section .social-btns .btn.twitter:before {background: #3cf;}
@@ -2534,7 +2534,7 @@ label[for="file-upload"]{padding:0.5em;display:inline-block;background:#076a76;c
   .footer-section .social-btns .btn.linkedin .fa {color: #0077B5;}
   
   .footer-section .social-btns .btn.skype:before {background: #00aff0;}
-  .footer-section .social-btns .btn.skype .fa {color: #00aff0;}
+  .footer-section .social-btns .btn.skype .fa {color: #00aff0;} */
   
   .footer-section .social-btns .btn:focus:before, .social-btns .btn:hover:before {
     top: -10%;
@@ -2566,7 +2566,7 @@ label[for="file-upload"]{padding:0.5em;display:inline-block;background:#076a76;c
     border-radius: 50%;
     box-shadow: 0px 0px 5px 0px #d9d9d9;
     opacity: 0.99;
-    padding: 5px 0px;
+    padding: 0px 0px;
     border: 2px solid #fff;
   }
   .footer-section  .social-btns .btn:before {

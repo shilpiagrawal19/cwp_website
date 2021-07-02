@@ -3,9 +3,7 @@ import tabb from '../../assets/img/tab/b.png'
 import taba from '../../assets/img/tab/a.png'
 import tabc from '../../assets/img/tab/c.png'
 import whitecheckmark from "../../assets/img/whitecheckmark.png"
-
 import shape from '../../assets/img/tab/shape.png'
-
 import $ from 'jquery'
 
 
@@ -33,20 +31,22 @@ function Our_outstanding_work() {
             $('.tabs li a').removeClass('btn4Color');
             $('.tabs li a').removeClass('btn5Color');
             $('.tabs li a').removeClass('btn6Color');
-            $('.btn_sec6').addClass('btn6Color');
-            $('.btn_sec5').addClass('btn5Color');
-            $('.btn_sec1').addClass('btn1Color')
+            // $('.btn_sec6').addClass('btn6Color');
+            // $('.btn_sec5').addClass('btn5Color');
+            // $('.btn_sec1').addClass('btn1Color')
             $(this).addClass('btn1Color');
         });
         $('.btn2 a').click(function() {
+            $('.btn_sec2').addClass('current')
+
             $('.tabs li a').removeClass('btn1Color');
             $('.tabs li a').removeClass('btn3Color');
             $('.tabs li a').removeClass('btn4Color');
             $('.tabs li a').removeClass('btn5Color');
             $('.tabs li a').removeClass('btn6Color');
-            $('.btn_sec6').addClass('btn6Color');
-            $('.btn_sec5').addClass('btn5Color');
-            $('.btn_sec2').addClass('btn2Color')
+            // $('.btn_sec6').addClass('btn6Color');
+            // $('.btn_sec5').addClass('btn5Color');
+            // $('.tabs_item').addClass('btn2Color')
             $(this).addClass('btn2Color');
         });
         $('.btn3 a').click(function() {
@@ -55,8 +55,8 @@ function Our_outstanding_work() {
             $('.tabs li a').removeClass('btn2Color');
             $('.tabs li a').removeClass('btn5Color');
             $('.tabs li a').removeClass('btn6Color');
-            $('.btn_sec6').addClass('btn6Color');
-            $('.btn_sec5').addClass('btn5Color');
+            // $('.btn_sec6').addClass('btn6Color');
+            // $('.btn_sec5').addClass('btn5Color');
             $('.btn_sec3').addClass('btn3Color')
             $(this).addClass('btn3Color');
         });
@@ -103,9 +103,9 @@ function Our_outstanding_work() {
                     <div class="tab boosting-list-tab">
                         <ul class="tabs">
                             <li class="btn1" data-skin="#e67817">
-                                <a href="#1">
+                                <a href="#1" >
                                     <i class="flaticon-mobile"></i>
-                                    <span>Taxi Apps</span>
+                                    <span>Taxi Appsss</span>
                                 </a>
                             </li>
         
@@ -153,7 +153,7 @@ function Our_outstanding_work() {
                                             <img src={tabb} alt="taxidude"/>
                                         </div>
                                     </div>
-        
+                                
                                     <div class="col-lg-7">
                                         <div class="content">
                                             <h2>Taxidudes Apps</h2>
@@ -364,7 +364,7 @@ function Our_outstanding_work() {
             </section>
           
 
-
+       
             
           
             
