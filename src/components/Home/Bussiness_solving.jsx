@@ -1,4 +1,7 @@
 import React from 'react'
+import decisionmaking from '../../assets/img/decisionmaking (1).png'
+import crm from '../../assets/img/crm.png'
+import statistics from '../../assets/img/statistics.png'
 
 function Bussiness_solving() {
     return (
@@ -14,7 +17,7 @@ function Bussiness_solving() {
                 <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp" id="visibility_show" >
                     <div class="single-features-item bg-f27e19">
                         <div class="icon">
-                            <i class="flaticon-crm"></i>
+                            <i><img src={crm}/></i>
                         </div>
 
                         <h3 class="animated fadeIn">Acquire & Retain Customers</h3>
@@ -25,7 +28,7 @@ function Bussiness_solving() {
                 <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp" id="visibility_show">
                     <div class="single-features-item bg-1db294">
                         <div class="icon">
-                            <i class="flaticon-decision-making"></i>
+                          <i><img src={decisionmaking}/></i> 
                         </div>
 
                         <h3 class="animated fadeIn">Make Better Decisions</h3>
@@ -36,7 +39,7 @@ function Bussiness_solving() {
                 <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp" id="visibility_show">
                     <div class="single-features-item bg-e80d82">
                         <div class="icon">
-                            <i class="flaticon-time-management"></i>
+                            <i><img src={statistics}/></i>
                         </div>
 
                         <h3 class="animated fadeIn">Increase Productivity</h3>

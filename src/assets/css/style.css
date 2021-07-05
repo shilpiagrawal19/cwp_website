@@ -8315,3 +8315,76 @@ Copyright Section CSS
 .modal-section .modal-content {
   border-radius: 2rem !important;
 }
+.popupimg_1{
+  max-width: 200% !important;
+  width: 130% !important;
+  height: 100% !important;
+}
+
+.modal-body{
+  overflow: hidden;
+  max-height: 370px;
+}
+
+.tab-shape   {position: relative;
+right: -463px;
+width: 165px;}
+
+.btn1color{
+  background-color: #f5a259 ;
+}
+.tab-content-section{
+  padding: 0px 0px;
+}
+.whiteclr{
+  color: white;
+}
+
+.tablist-active{
+  background-color:#f5a259;
+  color: white;
+  border-radius: 10px;
+} 
+.modal-dialog{
+  margin-top: 100px !important;
+}
+
+.Development{
+  padding: 50px 0px;
+}
+
+.cards{
+  /* height: 300px; */
+  width: 45%;
+  padding-bottom: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.cards h3{
+  padding-top: 5px;
+  font-size: 20px;
+}
+.cards p{
+  font-size: 14px;
+}
+
+.cards:hover{
+  
+  /* background: #4d686b; */
+  /* color: white; */
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+/* .cards p:hover{
+  color: white;
+}
+
+.cards li:hover{
+  color: white;
+} */
+
+.imgdevelopment {
+  margin-top: 50px;
+  width: 340px;
+  height: 340px;
+}

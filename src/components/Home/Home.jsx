@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect, useState } from "react";
 import Navbar from '../Navbar/Navbar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import html5 from '../../assets/img/myicon/html5.png'
@@ -33,6 +34,9 @@ import Fade from 'react-reveal/Fade';
 import Preloader from '../Preloader/Preloader'
 import whatsapp from '../../assets/image/whatsapp.png'
 import call from '../../assets/image/call.png'
+import Tab from '../tab/Tab'
+import Developments from './Developments';
+
 
 
 dom.watch()
@@ -42,6 +46,27 @@ library.add(fas);
 
 
 function Home() {
+    const [isVisible, setIsVisible] = useState(false);
+
+    const toggleVisibility = () => {
+        if (window.pageYOffset > 300) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      };
+      const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      };
+      useEffect(() => {
+        window.addEventListener("scroll", toggleVisibility);
+      }, []);
+    
+    
+  
     $(window).on('scroll',function() {
         if ($(this).scrollTop() > 120){  
             $('.navbar-area').addClass("is-sticky");
@@ -61,6 +86,15 @@ function Home() {
         }
     });
 
+    $(window).on('scroll', function(){
+        var scrolled = $(window).scrollTop();
+        if (scrolled > 600) $('.go-top').addClass('active');
+        if (scrolled < 600) $('.go-top').removeClass('active');
+    });  
+    // Click Event
+    // $('.go-top').on('click', function() {
+    //     $("html, body").animate({ scrollTop: "0" },  500);
+    // });
     const testimonial ={
         loop: true,
         center: true,
@@ -68,9 +102,9 @@ function Home() {
         margin: 0,
         autoplay: true,
         dots:true,
-        autoplayTimeout: 1000,
+        autoplayTimeout: 2500,
         autoplayHoverPause: true,
-        smartSpeed: 450,
+        smartSpeed: 2500,
         responsive: {
           0: {
             items: 1
@@ -347,38 +381,7 @@ function Home() {
 
      
         /*///////////////extra section 4 colum Developments */}
-    <section id="extra-sec" style={{paddingtop:"0px"}}>
-            
-    <div class="col-inner">
-    <h3>WEB APP DEVELOPMENT</h3>
-    <p>Superlative <strong>Web application development</strong> projects require technology that perfectly fits the web design. We rely on the right tools to get the job done, not a "one-size-fits-all" tech stack.</p>
-
-    </div>
-
-    <div class="col-inner col-inner0" style={{paddingTop:"60px" ,paddingBottom:"0px"}}>
-    <h3>MOBILE APP DEVELOPMENT</h3>
-    <p style={{textAlign: "justify"}}>We are an <strong>Mobile app development</strong> company Indore India with the cutting edge technologies developing complex solutions.Thus, providing you the most robust Web & Mobile Application for your demands.</p>
-    <ul style={{color: "#fff" ,textAlign:"left"}}>
-    <li><i/>Android App Development company in Indore</li>
-    <li><i/>IOS App Development company in Indore</li>
-    </ul>
-
-    </div>
-
-    
-    <div class="col-inner col-inner1">
-    <h3>WEB DESIGN SERVICES</h3>
-    <p>The most impressive Websites and Mobile App that you are noticing in the web are rooted in smart Web Design (UI/UX). A design which embodies clear vision and are backed by the right technology.</p>
-
-    </div>
-
-    <div class="col-inner col-inner0">
-        <h3>SEARCH ENGINE OPTIMIZATION</h3>
-        <p style={{textAlign: "justify"}}>Search Engine Optimization helps to improve the quantity and quality of traffic to your website. It will also help your business to increase online presence, brand value, users, leads, and ranking on the search engine.</p>
-    </div>
-
-    </section>
-
+   <Developments/>
 
     {/* Why choose us section */}
     <section class="choose-section">
@@ -428,8 +431,10 @@ function Home() {
     <Step_ahead/>
 
 
-    {/* ///////////our outstanding work//////// */}
-    <Our_outstanding_work/>                                    
+    {/* ///////////our outstanding work//////// 
+    <Our_outstanding_work/>   */}
+     
+    <Tab/>                                 
 
 
     {/* Bussiness Solving technique */}
@@ -444,9 +449,15 @@ function Home() {
        
        {/*//////////Footer/////////////////////// */}
        <Footer/>
-
+       <div className="scroll-to-top">
+       {isVisible && 
+ 
+     <div className="go-top" type="button" onClick={scrollToTop}>
+       <i className="fa fa-chevron-up"></i>
+   </div>}
+   </div>
      {/* ///////social fixed img  */}
-    <div class="fixedIcon">
+    <div className="fixedIcon">
     <ul style={{textAlign:"left"}}>
         <li>
             <a href="https://www.cloudwapp.com/ContactUs"> <img src={call} alt="contact"/> </a>
@@ -462,16 +473,16 @@ function Home() {
    
 
     {/* ///////need help fixed img  */}
-    <div class="needhelpfixed">
+    <div className="needhelpfixed">
         <a href="https://www.cloudwapp.com/ContactUs">
-        <img src="https://www.cloudwapp.com/assets/front/img/myicon/need-help1.png" alt="" class="img-fluid"/>
+        <img src="https://www.cloudwapp.com/assets/front/img/myicon/need-help1.png" alt="" className="img-fluid"/>
         <p><span> Need <br/> Help ? </span></p>
         </a>
     </div>
 
 
    {/* ////// hiring fixed img  */}
-    <div class="fixedIcon hiring-icon">
+    <div className="fixedIcon hiring-icon">
     <a href="https://www.cloudwapp.com/Career">
     <img src="https://www.cloudwapp.com/assets/front/image/hiring.png" alt="Hiring"/>
     </a>

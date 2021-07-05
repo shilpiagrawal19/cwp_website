@@ -105,7 +105,7 @@ function Our_outstanding_work() {
                             <li class="btn1" data-skin="#e67817">
                                 <a href="#1" >
                                     <i class="flaticon-mobile"></i>
-                                    <span>Taxi Appsss</span>
+                                    <span>Taxi Apps</span>
                                 </a>
                             </li>
         

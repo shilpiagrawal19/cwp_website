@@ -2,13 +2,12 @@ import React,{useEffect , useState} from 'react'
 import {Modal, Button} from "react-bootstrap";
 import popup1 from "../../assets/img/popup/popup1.png"
 import popup2 from "../../assets/img/popup/popup2.png"
-
 import cross from "../../assets/img/cross.png";
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 function Preloader() {
-
+    
     const popup= {
         loop: true,
         nav: true,
@@ -49,14 +48,15 @@ function Preloader() {
     }
 
     
-    return (      
-        // <div className="preloader">
-        //     {<div className="loader">
-        //         <div className="shadow"></div>
-        //         <div className="box"></div>
-        //     </div>}
-        //  </div>
-        <section>
+    return ( 
+        <div>   
+         {/*<div className="preloader">
+             <div className="loader">
+                 <div className="shadow"></div>
+                 <div className="box"></div>
+             </div>
+    </div>*/}
+        <section type="button" class="close-popup"  onClick={()=>closeModal()}>
        <Modal show={modal} className="modal-section">
                 <div className="form_model welcome-popup">
                 <Modal.Body>
@@ -78,12 +78,12 @@ function Preloader() {
                             </Button>
                          </div>
                         <div className="col-sm-5">
-                             <img src={popup1} className="popup-img" alt="image"/>
+                             <img src={popup1} className="popup-img popupimg_1" alt="image"/>
                         </div>         
                     </div>          
                 </div>
                 </div>
-                      <div className="popup_slider">
+                      <div className="popup_slider" >
                 <button type="button" class="close-popup"  onClick={()=>closeModal()}>
                     <img src={cross} alt="cross"/>
                 </button>
@@ -111,7 +111,7 @@ function Preloader() {
         </Modal>
         
         </section>
-   
+        </div>  
             
         )
 }
